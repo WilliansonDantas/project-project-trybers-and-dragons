@@ -7,6 +7,8 @@ const player1 = new Character('Dwarf');
 player1.levelUp();
 player1.levelUp();
 player1.levelUp();
+player1.levelUp();
+player1.levelUp();
 const player2 = new Character('Elf');
 const player3 = new Character('Halfing');
 
