@@ -11,18 +11,18 @@ export default class PVE extends Battle {
     this.Monsters = Monsters;
   }
   
-  fight(): number {
-    let boolCharacter = this.Character.lifePoints;
-    let boolMonster = true;
-    while (boolCharacter > 0 
-      && boolMonster) {
-      this.Monsters.forEach((monster) => {
-        monster.attack(this.Character); 
-        this.Character.attack(monster);
-      });
-      boolCharacter = this.Character.lifePoints;
-      boolMonster = this.Monsters.some((monster) => monster.lifePoints > 0);
-    }
-    return super.fight();
-  }
+  // fight(): number {
+  //   let boolCharacter = this.Character.lifePoints;
+  //   let boolMonster = true;
+  //   while (boolCharacter > 0 
+  //     && boolMonster) {
+  //     this.Monsters.forEach((monster) => {
+  //       monster.attack(this.Character); 
+  //       this.Character.attack(monster);
+  //     });
+  //     boolCharacter = this.Character.lifePoints;
+  //     boolMonster = this.Monsters.some((monster) => monster.lifePoints > 0);
+  //   }
+  //   return super.fight();
+  // }
 }
